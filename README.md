@@ -14,8 +14,10 @@ This is the second part of the school project.
 > See the [School Project Part2](https://github.com/edacaam/100DaysOfCode-CSharp/tree/master/Day3)
 
 ### Day 4 - School application using sql database and dataset with c # - 04/04/2020
-I worked on the teacher panel.In addition to adding, deleting, and updating students, I also performed operations on grade calculations.
+I worked on the teacher panel.In addition to adding, deleting, and updating students information, I also performed operations on grade calculations.
 This is the third  part of the school project.
 > See the [School Project Part3](https://github.com/edacaam/100DaysOfCode-CSharp/tree/master/Day4)
  
   
+> I love You [Kaan Akdeniz](https://github.com/kaanakdeniz) <3
+Also ,More love doesn't remove the eye
