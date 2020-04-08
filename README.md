@@ -30,7 +30,7 @@ This is the first  part of the listter project.I created the login screen.
 
 ### Day 7 - Archive application using sql database and dataset with c # - 08/04/2020
 I created the user registration screen and main menu.I linked my project to the sql database.
-This is the second  part of the school project.
+This is the second  part of the listter project.
 > See the [Listter Project Part2](https://github.com/edacaam/100DaysOfCode-CSharp/tree/master/Day7)
  
   
