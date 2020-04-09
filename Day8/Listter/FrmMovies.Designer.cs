@@ -73,7 +73,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(18, 340);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1156, 505);
+            this.dataGridView1.Size = new System.Drawing.Size(1156, 524);
             this.dataGridView1.TabIndex = 0;
             // 
             // TxtSearch
@@ -382,7 +382,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
-            this.ClientSize = new System.Drawing.Size(1200, 863);
+            this.ClientSize = new System.Drawing.Size(1200, 878);
             this.Controls.Add(this.MtxtTime);
             this.Controls.Add(this.LblTime);
             this.Controls.Add(this.CmbType);
