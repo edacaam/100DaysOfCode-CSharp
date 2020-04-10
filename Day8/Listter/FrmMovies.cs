@@ -17,14 +17,16 @@ namespace Listter
             InitializeComponent();
         }
         Connection bgl = new Connection();
-
-        private void PicList_Click(object sender, EventArgs e)
+        void list()
         {
-            SqlDataAdapter da = new SqlDataAdapter("Select * From Tbl_Movies",bgl.connection());
+            SqlDataAdapter da = new SqlDataAdapter("Select * From Tbl_Movies", bgl.connection());
             DataTable dt = new DataTable();
             da.Fill(dt);
             dataGridView1.DataSource = dt;
-
+        }
+        private void PicList_Click(object sender, EventArgs e)
+        {
+            list();
         }
 
         private void PicAdd_Click(object sender, EventArgs e)
@@ -61,6 +63,46 @@ namespace Listter
             SqlDataAdapter da = new SqlDataAdapter(command);
             da.Fill(dt);
             dataGridView1.DataSource = dt;
+        }
+
+        private void PicUpdate_Click(object sender, EventArgs e)
+        {
+            SqlCommand command = new SqlCommand("Update Tbl_Movies set MovieName=@p1,MovieTime=@p2,MovieYear=@p3,MovieDirector=@p4,MovieLanguage=@p5,MovieStarsID=@p6,MovieType=@p7 where ID=@p8",bgl.connection());
+            command.Parameters.AddWithValue("@p1", TxtName.Text);
+            command.Parameters.AddWithValue("@p2", MtxtTime.Text);
+            command.Parameters.AddWithValue("@p3", CmbYear.Text);
+            command.Parameters.AddWithValue("@p4", TxtDirector.Text);
+            command.Parameters.AddWithValue("@p5", CmbLanguage.Text);
+            command.Parameters.AddWithValue("@p6", TxtStars.Text);
+            command.Parameters.AddWithValue("@p7", CmbType.Text);
+            command.Parameters.AddWithValue("@p8", TxtMovieid.Text);
+            command.ExecuteNonQuery();
+            bgl.connection().Close();
+            MessageBox.Show("Movie updated", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            list();
+            
+        }
+
+        private void PicDelete_Click(object sender, EventArgs e)
+        {
+            SqlCommand command = new SqlCommand("Delete from Tbl_Movies where ID=@p1", bgl.connection());
+            command.Parameters.AddWithValue("@p1", TxtMovieid.Text);
+            command.ExecuteNonQuery();
+            bgl.connection().Close();
+            MessageBox.Show("Movie deleted", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            list();
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            TxtMovieid.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+            TxtName.Text= dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+            MtxtTime.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+            CmbYear.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+            TxtDirector.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+            CmbLanguage.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+            TxtStars.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
+            CmbType.Text = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
         }
     }
 }
