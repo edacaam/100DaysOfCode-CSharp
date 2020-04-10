@@ -32,5 +32,15 @@ This is the first  part of the listter project.I created the login screen.
 I created the user registration screen and main menu.I linked my project to the sql database.
 This is the second  part of the listter project.
 > See the [Listter Project Part2](https://github.com/edacaam/100DaysOfCode-CSharp/tree/master/Day7)
+
+### Day 8 - Archive application using sql database and dataset with c # - 09/04/2020
+I created the movie management screen.
+This is the third  part of the listter project.I coded the movie insert listing and search commands.
+> See the [Listter Project Part3](https://github.com/edacaam/100DaysOfCode-CSharp/tree/master/Day8)
+ 
+ ### Day 9 - Archive application using sql database and dataset with c # - 10/04/2020
+I made updates on the movie adding management screen.I coded the movie update and delete commands.
+This is the fourth  part of the listter project.
+> See the [Listter Project Part4](https://github.com/edacaam/100DaysOfCode-CSharp/tree/master/Day9)
  
   
