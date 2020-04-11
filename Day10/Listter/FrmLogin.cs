@@ -52,14 +52,13 @@ namespace Listter
         
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            SqlCommand command = new SqlCommand("Select ID From Tbl_Users where Username=@p1 and UserPassword=@p2", bgl.connection());
+            SqlCommand command = new SqlCommand("Select * From Tbl_Users where Username=@p1 and UserPassword=@p2", bgl.connection());
             command.Parameters.AddWithValue("@p1", TxtUserName.Text);
             command.Parameters.AddWithValue("@p2", TxtPassword.Text);
             SqlDataReader dr = command.ExecuteReader();
             if(dr.Read())
-            { 
+            {
                 FrmMainpage fr = new FrmMainpage();
-                fr.Userid=(int)dr[0];
                 fr.name = TxtUserName.Text.ToUpper();
                 fr.Show();
                 this.Hide();

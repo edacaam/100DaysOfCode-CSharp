@@ -53,7 +53,9 @@ namespace Listter
         {
             this.Close();
             FrmMainpage fr = new FrmMainpage();
+           
             fr.Show();
+            
         }
         private void TxtSearch_TextChanged_1(object sender, EventArgs e)
         {
@@ -92,7 +94,7 @@ namespace Listter
             MessageBox.Show("Movie deleted", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             list();
         }
-
+        public int movieid;
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             TxtMovieid.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
@@ -103,6 +105,20 @@ namespace Listter
             CmbLanguage.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
             TxtStars.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
             CmbType.Text = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
+            movieid = (int)dataGridView1.Rows[e.RowIndex].Cells[0].Value;
+        }
+       
+        private void PicSelect_Click(object sender, EventArgs e)
+        {
+            FrmMainpage fr = new FrmMainpage();
+            SqlCommand command = new SqlCommand("Insert into Tbl_ListContents (Listid,Movieid) values (@p1,@p2)", bgl.connection());
+            Console.WriteLine(FrmMainpage.test);
+            Console.WriteLine(movieid);
+            command.Parameters.AddWithValue("@p1",FrmMainpage.test);
+            command.Parameters.AddWithValue("@p2",movieid);
+            command.ExecuteNonQuery();
+            bgl.connection().Close();
+            MessageBox.Show("Your list created", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

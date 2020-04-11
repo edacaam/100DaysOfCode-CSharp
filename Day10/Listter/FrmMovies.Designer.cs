@@ -56,10 +56,6 @@
             this.TxtStars = new System.Windows.Forms.TextBox();
             this.LblTime = new System.Windows.Forms.Label();
             this.MtxtTime = new System.Windows.Forms.MaskedTextBox();
-            this.LblMovieid = new System.Windows.Forms.Label();
-            this.TxtMovieid = new System.Windows.Forms.TextBox();
-            this.LblSelect = new System.Windows.Forms.Label();
-            this.PicSelect = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicSearch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBack)).BeginInit();
@@ -68,19 +64,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.PicDelete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicAdd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicUpdate)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicSelect)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(18, 384);
+            this.dataGridView1.Location = new System.Drawing.Point(18, 340);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1156, 480);
+            this.dataGridView1.Size = new System.Drawing.Size(1156, 505);
             this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // TxtSearch
             // 
@@ -149,7 +143,6 @@
             this.PicDelete.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicDelete.TabIndex = 6;
             this.PicDelete.TabStop = false;
-            this.PicDelete.Click += new System.EventHandler(this.PicDelete_Click);
             // 
             // PicAdd
             // 
@@ -173,7 +166,6 @@
             this.PicUpdate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicUpdate.TabIndex = 8;
             this.PicUpdate.TabStop = false;
-            this.PicUpdate.Click += new System.EventHandler(this.PicUpdate_Click);
             // 
             // LblList
             // 
@@ -213,14 +205,14 @@
             // 
             // TxtName
             // 
-            this.TxtName.Location = new System.Drawing.Point(223, 76);
+            this.TxtName.Location = new System.Drawing.Point(227, 29);
             this.TxtName.Name = "TxtName";
             this.TxtName.Size = new System.Drawing.Size(162, 26);
             this.TxtName.TabIndex = 13;
             // 
             // TxtDirector
             // 
-            this.TxtDirector.Location = new System.Drawing.Point(223, 201);
+            this.TxtDirector.Location = new System.Drawing.Point(227, 154);
             this.TxtDirector.Name = "TxtDirector";
             this.TxtDirector.Size = new System.Drawing.Size(162, 26);
             this.TxtDirector.TabIndex = 16;
@@ -260,7 +252,7 @@
             "2018",
             "2019",
             "2020"});
-            this.CmbYear.Location = new System.Drawing.Point(223, 163);
+            this.CmbYear.Location = new System.Drawing.Point(227, 116);
             this.CmbYear.Name = "CmbYear";
             this.CmbYear.Size = new System.Drawing.Size(162, 28);
             this.CmbYear.TabIndex = 17;
@@ -276,7 +268,7 @@
             "Korean",
             "Russian",
             "Turkish"});
-            this.CmbLanguage.Location = new System.Drawing.Point(223, 244);
+            this.CmbLanguage.Location = new System.Drawing.Point(227, 197);
             this.CmbLanguage.Name = "CmbLanguage";
             this.CmbLanguage.Size = new System.Drawing.Size(162, 28);
             this.CmbLanguage.TabIndex = 18;
@@ -285,7 +277,7 @@
             // 
             this.LblName.AutoSize = true;
             this.LblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblName.Location = new System.Drawing.Point(62, 73);
+            this.LblName.Location = new System.Drawing.Point(66, 26);
             this.LblName.Name = "LblName";
             this.LblName.Size = new System.Drawing.Size(155, 29);
             this.LblName.TabIndex = 19;
@@ -295,7 +287,7 @@
             // 
             this.LblYear.AutoSize = true;
             this.LblYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblYear.Location = new System.Drawing.Point(76, 163);
+            this.LblYear.Location = new System.Drawing.Point(80, 116);
             this.LblYear.Name = "LblYear";
             this.LblYear.Size = new System.Drawing.Size(141, 29);
             this.LblYear.TabIndex = 20;
@@ -305,7 +297,7 @@
             // 
             this.LblDirector.AutoSize = true;
             this.LblDirector.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblDirector.Location = new System.Drawing.Point(42, 200);
+            this.LblDirector.Location = new System.Drawing.Point(46, 153);
             this.LblDirector.Name = "LblDirector";
             this.LblDirector.Size = new System.Drawing.Size(175, 29);
             this.LblDirector.TabIndex = 21;
@@ -315,7 +307,7 @@
             // 
             this.LblLanguage.AutoSize = true;
             this.LblLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblLanguage.Location = new System.Drawing.Point(20, 244);
+            this.LblLanguage.Location = new System.Drawing.Point(24, 197);
             this.LblLanguage.Name = "LblLanguage";
             this.LblLanguage.Size = new System.Drawing.Size(197, 29);
             this.LblLanguage.TabIndex = 22;
@@ -334,7 +326,7 @@
             "Science fiction",
             "Animation",
             "Romance Films"});
-            this.CmbType.Location = new System.Drawing.Point(223, 334);
+            this.CmbType.Location = new System.Drawing.Point(227, 287);
             this.CmbType.Name = "CmbType";
             this.CmbType.Size = new System.Drawing.Size(162, 28);
             this.CmbType.TabIndex = 29;
@@ -343,7 +335,7 @@
             // 
             this.LblType.AutoSize = true;
             this.LblType.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblType.Location = new System.Drawing.Point(72, 334);
+            this.LblType.Location = new System.Drawing.Point(76, 287);
             this.LblType.Name = "LblType";
             this.LblType.Size = new System.Drawing.Size(145, 29);
             this.LblType.TabIndex = 28;
@@ -353,7 +345,7 @@
             // 
             this.LblStar.AutoSize = true;
             this.LblStar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblStar.Location = new System.Drawing.Point(72, 292);
+            this.LblStar.Location = new System.Drawing.Point(76, 245);
             this.LblStar.Name = "LblStar";
             this.LblStar.Size = new System.Drawing.Size(145, 29);
             this.LblStar.TabIndex = 27;
@@ -361,7 +353,7 @@
             // 
             // TxtStars
             // 
-            this.TxtStars.Location = new System.Drawing.Point(223, 292);
+            this.TxtStars.Location = new System.Drawing.Point(227, 245);
             this.TxtStars.Name = "TxtStars";
             this.TxtStars.Size = new System.Drawing.Size(162, 26);
             this.TxtStars.TabIndex = 26;
@@ -370,7 +362,7 @@
             // 
             this.LblTime.AutoSize = true;
             this.LblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblTime.Location = new System.Drawing.Point(71, 115);
+            this.LblTime.Location = new System.Drawing.Point(66, 68);
             this.LblTime.Name = "LblTime";
             this.LblTime.Size = new System.Drawing.Size(146, 29);
             this.LblTime.TabIndex = 31;
@@ -378,62 +370,19 @@
             // 
             // MtxtTime
             // 
-            this.MtxtTime.Location = new System.Drawing.Point(223, 119);
+            this.MtxtTime.Location = new System.Drawing.Point(227, 72);
             this.MtxtTime.Mask = "90:00";
             this.MtxtTime.Name = "MtxtTime";
             this.MtxtTime.Size = new System.Drawing.Size(162, 26);
             this.MtxtTime.TabIndex = 32;
             this.MtxtTime.ValidatingType = typeof(System.DateTime);
             // 
-            // LblMovieid
-            // 
-            this.LblMovieid.AutoSize = true;
-            this.LblMovieid.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblMovieid.Location = new System.Drawing.Point(107, 35);
-            this.LblMovieid.Name = "LblMovieid";
-            this.LblMovieid.Size = new System.Drawing.Size(110, 29);
-            this.LblMovieid.TabIndex = 34;
-            this.LblMovieid.Text = "Movie Id:";
-            // 
-            // TxtMovieid
-            // 
-            this.TxtMovieid.Enabled = false;
-            this.TxtMovieid.Location = new System.Drawing.Point(223, 38);
-            this.TxtMovieid.Name = "TxtMovieid";
-            this.TxtMovieid.Size = new System.Drawing.Size(162, 26);
-            this.TxtMovieid.TabIndex = 33;
-            // 
-            // LblSelect
-            // 
-            this.LblSelect.AutoSize = true;
-            this.LblSelect.Location = new System.Drawing.Point(588, 295);
-            this.LblSelect.Name = "LblSelect";
-            this.LblSelect.Size = new System.Drawing.Size(54, 20);
-            this.LblSelect.TabIndex = 36;
-            this.LblSelect.Text = "Select";
-            // 
-            // PicSelect
-            // 
-            this.PicSelect.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PicSelect.Image = ((System.Drawing.Image)(resources.GetObject("PicSelect.Image")));
-            this.PicSelect.Location = new System.Drawing.Point(573, 227);
-            this.PicSelect.Name = "PicSelect";
-            this.PicSelect.Size = new System.Drawing.Size(83, 65);
-            this.PicSelect.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PicSelect.TabIndex = 35;
-            this.PicSelect.TabStop = false;
-            this.PicSelect.Click += new System.EventHandler(this.PicSelect_Click);
-            // 
             // FrmMovies
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
-            this.ClientSize = new System.Drawing.Size(1200, 878);
-            this.Controls.Add(this.LblSelect);
-            this.Controls.Add(this.PicSelect);
-            this.Controls.Add(this.LblMovieid);
-            this.Controls.Add(this.TxtMovieid);
+            this.ClientSize = new System.Drawing.Size(1200, 863);
             this.Controls.Add(this.MtxtTime);
             this.Controls.Add(this.LblTime);
             this.Controls.Add(this.CmbType);
@@ -474,7 +423,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.PicDelete)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicAdd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicUpdate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicSelect)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -509,9 +457,5 @@
         private System.Windows.Forms.TextBox TxtStars;
         private System.Windows.Forms.Label LblTime;
         private System.Windows.Forms.MaskedTextBox MtxtTime;
-        private System.Windows.Forms.Label LblMovieid;
-        private System.Windows.Forms.TextBox TxtMovieid;
-        private System.Windows.Forms.Label LblSelect;
-        private System.Windows.Forms.PictureBox PicSelect;
     }
 }

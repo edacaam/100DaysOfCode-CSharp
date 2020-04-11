@@ -45,7 +45,6 @@
             this.LblSignup = new System.Windows.Forms.Label();
             this.PbOff = new System.Windows.Forms.PictureBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PbVisible)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PbUnvisible)).BeginInit();
@@ -236,21 +235,11 @@
             this.checkBox1.Text = "Remeber Me";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(65, 59);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 21);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "label1";
-            // 
             // FrmLogin
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.PbOff);
             this.Controls.Add(this.LblSignup);
@@ -300,7 +289,6 @@
         private System.Windows.Forms.Label LblSignup;
         private System.Windows.Forms.PictureBox PbOff;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Label label1;
     }
 }
 
