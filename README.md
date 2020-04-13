@@ -38,9 +38,19 @@ I created the movie management screen.
 This is the third  part of the listter project.I coded the movie insert listing and search commands.
 > See the [Listter Project Part3](https://github.com/edacaam/100DaysOfCode-CSharp/tree/master/Day8)
  
- ### Day 9 - Archive application using sql database and dataset with c # - 10/04/2020
+### Day 9 - Archive application using sql database and dataset with c # - 10/04/2020
 I made updates on the movie adding management screen.I coded the movie update and delete commands.
 This is the fourth  part of the listter project.
 > See the [Listter Project Part4](https://github.com/edacaam/100DaysOfCode-CSharp/tree/master/Day9)
+
+### Day 10 - Archive application using sql database and dataset with c # - 11/04/2020
+The main page has been renewed using associated tables so that the user can create a special movie list. Crud operation functions of the created lists have been written.
+This is the fifth  part of the listter project.
+> See the [Listter Project Part5](https://github.com/edacaam/100DaysOfCode-CSharp/tree/master/Day10)
+
+### Day 11 - Archive application using sql database and dataset with c # - 13/04/2020
+Series management screen was created and crud process function codes were written.
+This is the sixth  part of the listter project.
+> See the [Listter Project Part6](https://github.com/edacaam/100DaysOfCode-CSharp/tree/master/Day11)
  
   
