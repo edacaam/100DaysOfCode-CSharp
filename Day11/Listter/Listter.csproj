@@ -83,11 +83,6 @@
     <Compile Include="FrmSignup.Designer.cs">
       <DependentUpon>FrmSignup.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListterDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ListterDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmLogin.resx">
@@ -98,9 +93,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMovies.resx">
       <DependentUpon>FrmMovies.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmSeries.resx">
-      <DependentUpon>FrmSeries.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSignup.resx">
       <DependentUpon>FrmSignup.cs</DependentUpon>
@@ -114,17 +106,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="ListterDataSet.xsc">
-      <DependentUpon>ListterDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="ListterDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>ListterDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="ListterDataSet.xss">
-      <DependentUpon>ListterDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

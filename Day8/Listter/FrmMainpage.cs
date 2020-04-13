@@ -8,11 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-
 namespace Listter
 {
-    
-    public partial class FrmMainpage : Form
+   public partial class FrmMainpage : Form
     {
         public static int test;
         public FrmMainpage()
@@ -79,8 +77,8 @@ namespace Listter
                     test = (int)dr[0];
                 }
             }
-                
-            }
+
+        }
         private void BtnList_Click(object sender, EventArgs e)
         {
             if (CmbListType.SelectedItem == null)
@@ -95,7 +93,7 @@ namespace Listter
                 dataGridView1.DataSource = dt;
                 bgl.connection().Close();
             }
-            
+
         }
 
         private void CmbListType_SelectedIndexChanged(object sender, EventArgs e)
@@ -145,7 +143,7 @@ namespace Listter
         private void BtnDelete_Click(object sender, EventArgs e)
         {
             SqlCommand command = new SqlCommand("Delete From Tbl_Lists Where ID=@p1", bgl.connection());
-            command.Parameters.AddWithValue("@p1",TxtListid.Text.ToString());
+            command.Parameters.AddWithValue("@p1", TxtListid.Text.ToString());
             command.ExecuteNonQuery();
             bgl.connection().Close();
             MessageBox.Show("List deleted!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -170,4 +168,4 @@ namespace Listter
 
 }
 
-       
+
