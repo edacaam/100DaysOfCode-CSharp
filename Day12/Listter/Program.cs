@@ -16,7 +16,7 @@ namespace Listter
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmBooks());
+            Application.Run(new FrmLogin());
         }
     }
 }
