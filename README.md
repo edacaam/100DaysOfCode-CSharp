@@ -67,7 +67,7 @@ This is the eigth part of the listter project.
 > See the [Listter Project Part8](https://github.com/edacaam/100DaysOfCode-CSharp/tree/master/Day14)
 
 ### Day 15 - Archive application using sql database and dataset with c # - 23/04/2020
-I prevented duplicate data from being saved to the database.
+I prevented duplicate data from being saved to the database.<br/>
 I activated cascade deletion because Tables are connected in the database.
 I have added pictures to the datagridviews where the data can be viewed, with paths in the database.
 This is the ninth part of the listter project.
