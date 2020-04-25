@@ -52,5 +52,29 @@ This is the fifth  part of the listter project.
 Series management screen was created and crud process function codes were written.
 This is the sixth  part of the listter project.
 > See the [Listter Project Part6](https://github.com/edacaam/100DaysOfCode-CSharp/tree/master/Day11)
- 
+
+### Day 12 - Archive application using sql database and dataset with c # - 14/04/2020
+Books management screen was created and crud process function codes were written.
+This is the seventh part of the listter project.
+> See the [Listter Project Part7](https://github.com/edacaam/100DaysOfCode-CSharp/tree/master/Day12)
+
+### Day 13 - Archive application using sql database and dataset with c # - 21/04/2020
+Since there are some problems with Git, the last updated version of the project will continue from day 14.
+
+### Day 14 - Archive application using sql database and dataset with c # - 22/04/2020
+Users were created to create their own lists and add TV series, movies or books to the list.
+This is the eigth part of the listter project.
+> See the [Listter Project Part8](https://github.com/edacaam/100DaysOfCode-CSharp/tree/master/Day14)
+
+### Day 15 - Archive application using sql database and dataset with c # - 23/04/2020
+I prevented duplicate data from being saved to the database.
+I activated cascade deletion because Tables are connected in the database.
+I have added pictures to the datagridviews where the data can be viewed, with paths in the database.
+This is the ninth part of the listter project.
+> See the [Listter Project Part9](https://github.com/edacaam/100DaysOfCode-CSharp/tree/master/Day15)
+
+### Day 16 - Archive application using sql database and dataset with c # - 24/04/2020
+I updated the search section in the list and added the necessary error checks. I made the finished project setup.
+This is the final part of the listter project.
+> See the [Listter Project FinalPart](https://github.com/edacaam/100DaysOfCode-CSharp/tree/master/Day16)
   
