@@ -79,7 +79,14 @@ This is the final part of the listter project.<br/>
 > See the [Listter Project FinalPart](https://github.com/edacaam/100DaysOfCode-CSharp/tree/master/Day16)
 
 ### Day 17 - Quiz Application Using Sql Database with C# - 09/05/2020
-I started the Quiz Application project using Sql database and OOP.I created the management screen and main menu.I have completed the process of adding and updating questions from the management screen to the database.
+I started the Quiz Application project using Sql database and OOP.<br/>
+I created the management screen and main menu.I have completed the process of adding and updating questions from the management screen to the database.<br/>
 This is the first part of the Quiz Application.<br/>
 > See the [Quiz Appication Part1](https://github.com/edacaam/100DaysOfCode-CSharp/tree/master/Day17)
+
+### Day 18 - Quiz Application Using Sql Database with C# - 10/05/2020
+I added the question deletion feature to the program.<br/>
+I created the admin login screen.<br/>
+This is the second part of the Quiz Application.<br/>
+> See the [Quiz Appication Part2](https://github.com/edacaam/100DaysOfCode-CSharp/tree/master/Day18)
   
