@@ -89,4 +89,10 @@ I added the question deletion feature to the program.<br/>
 I created the admin login screen.<br/>
 This is the second part of the Quiz Application.<br/>
 > See the [Quiz Appication Part2](https://github.com/edacaam/100DaysOfCode-CSharp/tree/master/Day18)
+
+### Day 19 - Quiz Application Using Sql Database with C# - 17/05/2020
+I pulled questions and answers from the Database in the Database class.<br/>
+I displayed the questions I recorded in the list on the quiz screen and randomly displayed the answers in the options.<br/>
+This is the third part of the Quiz Application.<br/>
+> See the [Quiz Appication Part3](https://github.com/edacaam/100DaysOfCode-CSharp/tree/master/Day19)
   
