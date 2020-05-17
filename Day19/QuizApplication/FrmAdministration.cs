@@ -27,7 +27,6 @@ namespace QuizApplication
             else
                 this.Close();
         }
-
         private void picExit_Click(object sender, EventArgs e)
         {
             Application.Exit();

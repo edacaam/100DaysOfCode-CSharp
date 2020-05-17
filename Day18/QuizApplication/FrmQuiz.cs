@@ -21,10 +21,8 @@ namespace QuizApplication
         private void FrmQuiz_Load(object sender, EventArgs e)
         {
             Database db = new Database();
-          //  rchTxtBoxQuestions.Text = db.GetQuestions()[3];
 
         }
-
         private void PicExit_Click(object sender, EventArgs e)
         {
             Application.Exit();

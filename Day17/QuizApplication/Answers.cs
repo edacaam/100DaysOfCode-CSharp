@@ -8,8 +8,7 @@ namespace QuizApplication
 {
     class Answers
     {
-        int questionId;// burda question id tutuyoz ya zaten database de tek bi fonksiyonda otu boku çekmek yerine hepsini ayrı ayrı çeksek
-        //sonra da kodun içinde o soru idsine ait olanları alsak daha kolay olur gibi geldi kısaca gösterim
+        int questionId;
         Answers(int _questionID) {questionId = _questionID; }
     }
 }

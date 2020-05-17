@@ -10,10 +10,6 @@ namespace QuizApplication
     {
         private string wrongtext;
         private int questionID;
-        //WrongAnswer(int _questionID, string _text)
-        //{
-        //    this.text = _text;
-        //}
         public WrongAnswer()
         {
 

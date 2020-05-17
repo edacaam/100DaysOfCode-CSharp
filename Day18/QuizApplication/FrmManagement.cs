@@ -1,7 +1,4 @@
-﻿/*
- Created with love of Kaan!<3<3<3<3
- */
-
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -36,27 +33,6 @@ namespace QuizApplication
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-
-            //questionText = rchTxtBoxQuestion.Text;
-            //cAnswer = txtCanswer.Text;
-            //wAnswer1 = txtWanswer1.Text;
-            //wAnswer2 = txtWanswer2.Text;
-            //wAnswer3 = txtWanswer3.Text;
-
-            //db.AddQuestion(categoryType, questionText);
-            //SqlCommand command = new SqlCommand("SELECT TOP 1 * FROM Tbl_Questions ORDER BY ID DESC", bgl.connection());
-            //int quesitonId = (int)command.ExecuteScalar();
-
-            //db.AddWrongAnswer(quesitonId, wAnswer1);
-            //db.AddWrongAnswer(quesitonId, wAnswer2);
-            //db.AddWrongAnswer(quesitonId, wAnswer3);
-            //db.AddCorrectAnswer(quesitonId,cAnswer);
-            //foreach (WrongAnswer answer in q.WrongAnswers)
-            //{
-            //    db.AddWrongAnswer(quesitonId, answer.WrongText);
-            //}
-            //db.AddCorrectAnswer(quesitonId, q.CorrectAnswer.CorrectText);
-
             categoryType = int.Parse(cmbBoxType.SelectedValue.ToString());
             q.QuestionText = rchTxtBoxQuestion.Text;
             c.CorrectText = txtCanswer.Text;
@@ -86,14 +62,6 @@ namespace QuizApplication
             cmbBoxType.ValueMember = "ID";
             cmbBoxType.DataSource = dt;
             bgl.connection().Close();
-
-
-            //SqlCommand command1 = new SqlCommand("SELECT Tbl_Questions.ID,Tbl_Questions.Question,Tbl_WrongOptions.WrongOption,Tbl_CorrectOptions.CorrectOption FROM Tbl_Questions,Tbl_WrongOptions,Tbl_CorrectOptions WHERE Tbl_WrongOptions.Questionid=Tbl_Questions.ID AND Tbl_CorrectOptions.Questionid=Tbl_Questions.ID And Tbl_Questions.Categoryid=@p1", bgl.connection());
-            //command1.Parameters.AddWithValue("@p1", int.Parse(cmbBoxType.SelectedValue.ToString()));
-            //SqlDataAdapter da2 = new SqlDataAdapter(command1);
-            //DataTable dt2 = new DataTable();
-            //da2.Fill(dt2);
-            //dataGridView1.DataSource = dt2;
 
         }
         void list()
