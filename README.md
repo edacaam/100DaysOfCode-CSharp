@@ -96,3 +96,8 @@ I displayed the questions I recorded in the list on the quiz screen and randomly
 This is the third part of the Quiz Application.<br/>
 > See the [Quiz Appication Part3](https://github.com/edacaam/100DaysOfCode-CSharp/tree/master/Day19)
   
+### Day 20 - Quiz Application Using Sql Database with C# - 18/05/2020
+I got the user's nickname for player login.<br/>
+I recorded the player's score in the database and I displayed the scores in the leaderboard.<br/>
+This is the fourth part of the Quiz Application.<br/>
+> See the [Quiz Appication Part4](https://github.com/edacaam/100DaysOfCode-CSharp/tree/master/Day20)
